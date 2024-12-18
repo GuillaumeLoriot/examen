@@ -1,11 +1,284 @@
-body{
-    header{
+body {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+
+    header {
+        background-image: linear-gradient(rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.1)), url(../pictures/header_image.avif);
+        object-fit: cover;
+        object-position: top;
+        height: 350px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            text-align: right;
+
+            img {
+                width: 75px;
+            }
+        }
+
+        hgroup {
+            color: white;
+            text-align: center;
+
+            h1 {
+                font-size: 5em;
+                font-weight: 900;
+                font-style: italic;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+        }
+
+        nav {
+
+            ul {
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        margin: 15px;
+
+
+                        &.callToAction {
+                            background-color: rgb(0, 128, 128);
+                            padding: 7px 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
 
     }
-    main{
+
+    main {
+        section {
+            &#agencyObjective {
+                div {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 5em ;
+                    
+
+                    img {
+                        width: 30%;
+
+                    }
+
+                    hgroup {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: rgb(0, 128, 128);
+                        width: 35%;
+                        padding-left: 1em;
+
+                        h2 {
+                            text-decoration: underline;
+                            margin-left: -4em;
+                        }
+
+                        p {}
+
+                    }
+                    @media screen and (max-width: 768px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                       
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    margin-bottom: 0;
+
+                    li {
+                        width: 50%;
+                        border-top: solid 1px rgba(0, 0, 0, 0.3);
+                        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+                        padding: 2%;
+                        text-align: center;
+
+                        img {
+                            width: 50px;
+
+                        }
+
+                        p {}
+
+                        &#dreamHouseCard {
+                            border-right: solid 1px rgba(0, 0, 0, 0.3);
+                        }
+                    }
+                }
+
+            }
+
+            &#contactButtonSection {
+                background-image: url(../pictures/main_image.avif);
+                background-size: 100%;
+                object-fit: cover;
+                object-position: center;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                div {
+                    width: 40%;
+                    padding: 5% 0 5% 60%;
+
+
+                    h2 {
+                        margin: 0;
+                        width: 100%;
+                        margin-left: -15%;
+                        font-size: 1.6em;
+                    }
+
+                }
+
+                p {
+                    width: 70%;
+                    margin: 2em 0;
+                    line-height: 1.5em;
+                }
+
+                .callToAction {
+                    background-color: rgb(0, 128, 128);
+                    padding: 7px 10px;
+                    color: white;
+                    text-decoration: none;
+                }
+
+            }
+
+            &#moreInfos {
+                display: flex;
+                justify-content: center;
+                padding-right: 20em;
+
+                div {
+                    text-align: center;
+
+                    h2 {
+                        color: rgb(0, 128, 128);
+                        font-size: 1.6em;
+                        text-align: right;
+                        margin: 50px -1em;
+
+                    }
+
+                    &#statistics {
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        hgroup {
+                            width: 15%;
+
+                            h3 {
+                                color: rgb(0, 51, 102);
+                                font-size: 2.5em;
+                                text-align: center;
+                                margin: 0;
+
+
+                            }
+
+                            p {
+                                text-align: center;
+                            }
+
+                        }
+                    }
+
+                    &#cta {
+                        width: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+
+                        p {
+                            text-align: left;
+                        }
+
+                        .callToAction {
+                            background-color: rgb(0, 128, 128);
+                            padding: 7px 10px;
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                    }
+                }
+            }
+        }
+
 
     }
-    footer{
-        
+
+    footer {
+        background-color: #20232a;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 18em;
+        margin-top: 4em;
+
+        p {
+            color: white;
+            line-height: 30px;
+        }
+
+        address {
+            width: 25%;
+
+            hgroup {
+                width: 100%;
+                display: flex;
+
+                h4 {
+                    color: rgb(0, 128, 128);
+                    margin-right: 0.5em;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        div {
+            width: 40%;
+            margin-left: -100px;
+
+            img {
+                width: 75px;
+            }
+        }
+
+
     }
 }
